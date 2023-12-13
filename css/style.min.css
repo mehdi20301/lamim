@@ -93,7 +93,7 @@ body {
     line-height: 1.67;
     word-wrap: break-word;
     overflow-x: hidden;
-    background: #fff !important;
+    background: #FFFBF2 !important;
 }
 
 .au-btn,
@@ -724,7 +724,6 @@ textarea:-moz-placeholder {
     top: 0;
     width: 100%;
     z-index: 9999;
-    background: #fff;
 }
 
 .header-hp-1 .menu-desktop {
@@ -1596,7 +1595,12 @@ textarea:-moz-placeholder {
 }
 
 .footer-section {
-    background: hsl( 200, 15%, 23% );
+     /* background: black;  */
+     height: 200px;
+     background: linear-gradient(rgba(51,33,29,0.9), rgba(51,33,29,0.9)),url(../images/bg-2.jpeg);
+     background-position: top;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 .footer-section .footer-content .footer-items.footer-items-1 {

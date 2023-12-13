@@ -3,8 +3,8 @@
 
 <head>
    <meta charset="utf-8">
-   <title>E-Bik Home</title>
-   <link rel="icon" type="image/png" href="images/icons/favicon16.png">
+   <title>Lamim Home</title>
+   <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png">
    <meta name="description" content>
    <meta name="author" content>
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,22 +21,14 @@
 </head>
 
 <body class="homepages-1" onload='onloadbody()'>
-   <!-- <div class="images-preloader">
-         <div id="preloader_1" class="rectangle-bounce">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-         </div>
-      </div> -->
+
    <header class="header">
       <div class="header-hp-1 style-header-hp-1">
          <div id="js-navbar-fixed" class="menu-desktop">
             <div class="container-fluid">
                <div class="menu-desktop-inner">
                   <div class="logo">
-                     <a href="index.html"><img id="header-logo" src="images/icons/logo-black.png" alt="logo"></a>
+                     <a href="index.html"><img id="header-logo" src="images/icons/logo-tr.png" alt="logo"></a>
                   </div>
                   <div class="header-right">
                      <div class="site-header-cart">
@@ -80,7 +72,7 @@
                         <div class="modal-body">
                            <div class="canvas-content">
                               <div class="logo">
-                                 <a href="index.html"><img id="canvas-logo" src="images/icons/logo-black.png"
+                                 <a href="index.html"><img id="canvas-logo" src="images/icons/logo-tr.png"
                                        alt="logo"></a>
                               </div>
                               <div class="contact">
@@ -111,39 +103,28 @@
       </div>
    </header>
    <div class="clearfix page-content">
-      <section id="slider-main" class="revslider-wrap full-screen clearfix mb-5">
-         <div id="particles"></div>
+      <section id="slider-main" class="revslider-wrap full-screen clearfix mb-10">
+         <!-- <div id="particles"></div>
          <div>
             <div id="title-quote"></div>
-         </div>
-      </section>
-      <section class="featured-hp-1 clearfix">
-         <div class="container">
-            <div class="featured-content woocommerce">
-               <h2 class="special-heading">لیست محصولات</h2>
-               <div class="content-area">
-                  <div id="row-products" class="row">
-                  </div>
-               </div>
-            </div>
-         </div>
+         </div> -->
       </section>
       <section class="categories-hp-1 mb-5 clearfix">
          <div class="container">
-            <div class="featured-content woocommerce">
+            <!-- <div class="featured-content woocommerce">
                <h2 class="special-heading">دسته بندی محصولات </h2>
-            </div>
+            </div> -->
             <div class="categories-content">
                <div class="row">
                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                      <div class="categories-detail lighting">
-                        <a href="blog.html?bid=emotor" class="images"><img src="images/hp-1-categories-1.jpg"
+                        <a href="blog.html?bid=emotor" class="images"><img src="images/menu-3.jpeg"
                               alt="Lighting"></a>
                         <div class="product">
                            <a href="blog.html?bid=emotor">
                               <span class="name">
                                  <span class="line">- </span>
-                                 لوازم جانبی
+                                 قهوه آماده
                               </span>
                               <span id="emotor-qty" class="quantity">- 12 محصول</span>
                            </a>
@@ -152,13 +133,13 @@
                   </div>
                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                      <div class="categories-detail furniture">
-                        <a href="blog.html?bid=motorcycle" class="images"><img src="images/hp-1-categories-2.jpg"
+                        <a href="blog.html?bid=motorcycle" class="images"><img src="images/gallery-5.jpeg"
                               alt="Furniture"></a>
                         <div class="product">
                            <a href="blog.html?bid=motorcycle">
                               <span class="name">
                                  <span class="line">- </span>
-                                 اسکوتر و موتور برقی
+                                 قهوه ساز
                               </span>
                               <span id="motorcycle-qty" class="quantity">- 15 محصول</span>
                            </a>
@@ -167,18 +148,30 @@
                   </div>
                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                      <div class="categories-detail decoration">
-                        <a href="blog.html?bid=ebike" class="images"><img src="images/hp-1-categories-3.jpg"
+                        <a href="blog.html?bid=ebike" class="images"><img src="images/gallery-7.jpeg"
                               alt="Decoration"></a>
                         <div class="product">
                            <a href="blog.html?bid=ebike">
                               <span class="name">
                                  <span class="line">- </span>
-                                 دوچرخه برقی
+                                 قهوه ترکیبی
                               </span>
                               <span id="ebike-qty" class="quantity">- 4 محصول</span>
                            </a>
                         </div>
                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="featured-hp-1 clearfix">
+         <div class="container">
+            <div class="featured-content woocommerce">
+               <h2 class="special-heading">لیست محصولات</h2>
+               <div class="content-area">
+                  <div id="row-products" class="row">
                   </div>
                </div>
             </div>
@@ -218,95 +211,12 @@
    }
 
    function onloadbody() {
-      doload();
+      //doload();
       pageback = getUrlParameter('back');
       if (pageback == false) dolog(" index page");
       var basket = JSON.parse(localStorage.getItem('basket')) || [];
       basketCountNotify(basket);
-      particlesJS("particles", {
-         "particles": {
-            "number": {
-               "value": 80,
-               "density": {
-                  "enable": true,
-                  "value_area": 800
-               }
-            },
-            "color": {
-               "value": ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363", "#0D1e20", "#08E016", "#104322", "#1F5390", "#28F3E3"]
-            },
-            "shape": {
-               "type": "circle",
-               "stroke": {
-                  "width": 0,
-                  "color": "#b6b2b2"
-               }
-            },
-            "size": {
-               "value": 5,
-               "random": false,
 
-            },
-            "line_linked": {
-               "enable": false
-            },
-            "move": {
-               "enable": true,
-               "speed": 1,
-               "direction": "none",
-               "random": false,
-               "straight": false,
-               "out_mode": "bounce",
-               "bounce": false,
-               "attract": {
-                  "enable": false,
-                  "rotateX": 600,
-                  "rotateY": 1200
-               }
-            }
-         },
-         "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-               "onhover": {
-                  "enable": true,
-                  "mode": "bubble"
-               },
-               "onclick": {
-                  "enable": false,
-                  "mode": "push"
-               },
-               "resize": true
-            },
-            "modes": {
-               "grab": {
-                  "distance": 400,
-                  "line_linked": {
-                     "opacity": 1
-                  }
-               },
-               "bubble": {
-                  "distance": 10,
-                  "size": 10,
-                  "duration": 2,
-                  "opacity": 8,
-                  "speed": 3
-               },
-               "repulse": {
-                  "distance": 200,
-                  "duration": 0.4
-               },
-               "push": {
-                  "particles_nb": 4
-               },
-               "remove": {
-                  "particles_nb": 2
-               }
-            }
-         },
-         "retina_detect": false
-      });
-      animate();
 
       showQty('ebike' , '#ebike-qty' );
       showQty('emotor' , '#emotor-qty' );
@@ -361,12 +271,50 @@
       });
    }
 </script>
-<footer class="footer-section section-box">
-   <div class="wrapper">
+
+<div class="row  mb-5 mt-5">
+   <hr>
+   <div class="col-lg-4 col-md-6 mt-30">
+       <div class="contact-info d-flex align-items-center justify-content-center">
+           <div class="icon d-flex align-items-center justify-content-center">
+               <img src="images/icons/ci-1.png" alt="">
+           </div>
+           <div class="content">
+               <h4 class="title">ارسال فوری</h4>
+               <p><a >در صورت خرید تا ساعت</a></p>
+               <p><a >12 ظهر ارسال همان روز</a></p>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-4 col-md-6 mt-30">
+       <div class="contact-info d-flex align-items-center justify-content-center">
+           <div class="icon d-flex align-items-center justify-content-center">
+               <img src="images/icons/ci-2.png" alt="">
+           </div>
+           <div class="content">
+               <h4 class="title">تحویل درب منزل</h4>
+               <p>امکان پرداخت وجه درب منزل</p>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-4 col-md-6 mt-30">
+       <div class="contact-info d-flex align-items-center justify-content-center">
+           <div class="icon d-flex align-items-center justify-content-center">
+               <img src="images/icons/ci-3.png" alt="">
+           </div>
+           <div class="content">
+               <h4 class="title">ضمانت کیفیت کالا</h4>
+               <p>تضمین کیفیت</p>
+           </div>
+       </div>
+   </div>
+</div>
+<footer class="footer-section position-relative section-box">
+   <div class="wrapper  overlay-top">
       <div class="footer-content">
-         <div class="container">
+         <div class="container mt-5">
             <div class="row">
-               <div class="col-md-6 col-sm-12 col-12">
+               <div class="col-md-12 col-sm-12 col-12">
                   <div class="footer-items">
                      <div class="contact">
                         <img width="20" src="images/icons/telegram-logo.png">
