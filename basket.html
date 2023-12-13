@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>سبد خرید</title>
+   <link rel="icon" type="/image/png" href="images/icons/favicon16.png">
+   <meta name="description" content>
+   <meta name="author" content>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css?v1.21">
+   <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/settings.css?v1.21">
+   <link rel="stylesheet" href="css/layers.css">
+   <link rel="stylesheet" href="css/navigation.css">
+   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="css/style.min.css?v1.21" />
+</head>
+
+<body class="homepages-1" onload='onloadbody()'>
+   <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+             <p class="text-right green">
+                سفارش شما با موفقیت ثبت شد و در اولین فرصت تیم فروش با شما تماس خواهد گرفت.
+             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   <header class="header">
+      <div class="header-hp-1 style-header-hp-1">
+         <div id="js-navbar-fixed" class="menu-desktop">
+            <div class="container-fluid">
+               <div class="menu-desktop-inner">
+                  <div class="logo">
+                     <a href="index.html"><img id="header-logo" src="images/icons/logo-black.png" alt="logo"></a>
+                  </div>
+                  <div class="header-right">
+                     <div class="site-header-cart">
+                        <div>
+                           <a href="basket.html">
+                              <img src="images/icons/shopping-cart-black-icon.png" alt="cart">
+                              <span id="basket-count"></span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="canvas canvas-btn-wrap">
+                        <button class="canvas-images canvas-btn" data-toggle="modal" data-target="#canvasModal">
+                           <img src="images/icons/header-icon-3.png" alt="canvas">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="searchModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <form id="searchModal__form" method="POST">
+                              <button id="searchModal__submit" type="submit">
+                                 <i class="zmdi zmdi-search"></i>
+                              </button>
+                              <input id="searchModal__input" type="text" name="search" placeholder="Search Here ..." />
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="canvasModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <div class="canvas-content">
+                              <div class="logo">
+                                 <a href="index.html"><img id="canvas-logo" src="images/icons/logo-black.png"
+                                       alt="logo"></a>
+                              </div>
+                              <div class="contact">
+                                 <p id="notifyheader" style="display: none; color: lightgreen;"></p>
+                                 <p>لطفا برای برقراری تماس یا در تلگرام پیام خود را ارسال کنید و یا شماره موبایل خود را در کادر پایین وارد نمایید تا در اولین فرصت با شما تماس گرفته شود.</p>
+                                 <div class="contact-inner">
+                                    <img width="20" src="images/icons/telegram-logo.png">
+                                    <div class="contact-info">
+                                       <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in Telegram</a></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="email">
+                                 <div id="sendheader" class="send">
+                                    <i class="zmdi zmdi-mail-send"></i>
+                                 </div>
+                                 <input type="email"  id="emailheader"
+                                    placeholder="Mobile Number,...">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="page-content">
+      <section class="shop-cart-section section-box checkout-section">
+         <div class="woocommerce">
+            <div class="container">
+               <div class="entry-content">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 rtl">
+                        <div class="cart-collaterals">
+                           <form class="checkout woocommerce-checkout" >
+                              <div class="woocommerce-billing-fields">
+                                 <h2>اطلاعات صورتحساب</h2>
+                                 <p id="notifybilling" class="text-right red"></p>
+                                 <div class="woocommerce-billing-fields__field-wrapper">
+                                    <p class="form-row-first">
+                                       <input type="text" class="input-text " id="billing_name"
+                                          placeholder="نام و مشخصات">
+                                    </p>
+                                    <p class="form-row-last">
+                                       <input type="text" class="input-text " name="billing_phone" id="billing_phone"
+                                          placeholder="تلفن">
+                                    </p>
+                                    <p class="form-row-wide">
+                                       <input type="text" class="input-text " name="billing_address"
+                                          id="billing_address" placeholder="آدرس">
+                                    </p>
+
+                                    <p class="notes" id="order_comments_field">
+                                       <textarea name="order_comments" class="input-text " id="order_comments"
+                                          placeholder="لطفا توضیحات خود را بابت سفارش ثبت نمایید"></textarea>
+                                    </p>
+                                 </div>
+                              </div>
+                           </form>
+                           <div class="wc-proceed-to-checkout">
+                              <a onclick="registOrder()" class="checkout-button button wc-forward au-btn btn-small ">ثبت سفارش <i class="zmdi zmdi-arrow-left"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 rtl">
+                        <div class="woocommerce-checkout-review-order">
+                           <h2>جزئیات</h2>
+                           <table class="shop_table">
+                              <tbody id="basket-body">
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+
+
+   <a href="#" id="back-to-top"></a>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/data.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+<script>
+   var trbodystring = '';
+   function onloadbody() {
+      doload();
+      var basket = JSON.parse(localStorage.getItem('basket')) || [];
+      basketCountNotify(basket);
+      basket.forEach(element => {
+         var item = data.find(x => x.pid == element.pid);
+         var trstring = `<tr id='tr-${item.pid}' class="cart_item"><td>
+                        <a onclick="removebasket('${item.pid}')" class="remove">
+                        <span class="lnr lnr-cross"></span>
+                        </a></td>
+                        <td class="product-total">
+                        <span class="woocommerce-Price-amount amount">
+                        ${item.price}
+                        <span class="woocommerce-Price-currencySymbol">T</span>
+                        </span>
+                        </td>
+                        <td class="product-name">
+                        <a class="discont" href="detail.html?pid=${item.pid}"><img src="images/${item.pic[0]}" alt="product"></a>
+                        <div class="review-wrap">
+                        <span class="cart_item_title"><a href="detail.html?pid=${item.pid}">${item.title}</a></span>
+                        <span class="product-quantity">x${element.qty}</span>
+                        </div>
+                        </td>
+                        </tr>`;
+         trbodystring += trstring
+      });
+      $('#basket-body').html(trbodystring);
+   }
+</script>
+<footer class="footer-section section-box">
+   <div class="wrapper">
+      <div class="footer-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-12 col-12">
+                  <div class="footer-items">
+                     <div class="contact">
+                        <img width="20" src="images/icons/telegram-logo.png">
+                        <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in Telegram</a></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-10 col-10">
+                  <div class="footer-items">
+                     <div class="email">
+                        <div class="send" id="sendfooter">
+                           <i class="zmdi zmdi-mail-send"></i>
+                        </div>
+                        <input type="email"  id="emailfooter"
+                           placeholder="  لطفا شماره تماس خود را ثبت کنید">
+                     </div>
+                     <p id="notifyfooter" style="display: none; color:yellow"></p>
+                     <p>پ.ن: حرف T در قیمتها معادل میلیون تومان است</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Homepages 1</title>
+   <meta name="description" content>
+   <meta name="author" content>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/settings.css">
+   <link rel="stylesheet" href="css/layers.css">
+   <link rel="stylesheet" href="css/navigation.css">
+   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="homepages-1" onload='onloadbody()'>
+   <header class="header">
+      <div class="show-desktop-header header-hp-1 style-header-hp-1">
+         <div id="js-navbar-fixed" class="menu-desktop">
+            <div class="container-fluid">
+               <div class="menu-desktop-inner">
+                  <div class="logo">
+                     <a href="index1.html"><img id="header-logo" src="images/icons/logo-black.png" alt="logo"></a>
+                  </div>
+                  <div class="header-right">
+                     <div class="canvas canvas-btn-wrap">
+                        <button class="canvas-images canvas-btn" data-toggle="modal" data-target="#canvasModal">
+                           <img src="images/icons/header-icon-3.png" alt="canvas">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="searchModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <form id="searchModal__form" method="POST">
+                              <button id="searchModal__submit" type="submit">
+                                 <i class="zmdi zmdi-search"></i>
+                              </button>
+                              <input id="searchModal__input" type="text" name="search" placeholder="Search Here ..." />
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="canvasModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <div class="canvas-content">
+                              <div class="logo">
+                                 <a href="index1.html"><img id="canvas-logo" src="images/icons/logo-black.png"
+                                       alt="logo"></a>
+                              </div>
+                              <div class="contact">
+                                 <h4>برقراری تماس</h4>
+                                 <div class="contact-inner">
+                                    <i class="zmdi zmdi-map"></i>
+                                    <div class="contact-info">
+                                       <span>No 40 Baria Sreet 133/2</span>
+                                    </div>
+                                 </div>
+                                 <div class="contact-inner">
+                                    <i class="zmdi zmdi-phone"></i>
+                                    <div class="contact-info">
+                                       <span><a href="tel:15618003666666">+ (156) 1800-366-6666</a></span>
+                                    </div>
+                                 </div>
+                                 <div class="contact-inner">
+                                    <i class="zmdi zmdi-whatsapp"></i>
+                                    <div class="contact-info">
+                                       <span>+ (156) 1800-366-6666</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="email">
+                                 <div class="send">
+                                    <i class="zmdi zmdi-mail-send"></i>
+                                 </div>
+                                 <input type="email"  name="email"
+                                    placeholder="Your e-mail , mobile ,...">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="js-navbar-mb-fixed" class="show-mobile-header">
+         <div class="mobile-top-header">
+            <div class="logo-mobile">
+               <a href="index1.html"><img id="mobile-logo" src="images/icons/logo-black.png" alt="logo"></a>
+            </div>
+            <button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+               <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+               </span>
+            </button>
+         </div>
+         <div class="au-navbar-mobile navbar-mobile-1">
+            <div class="navbar-items">
+               <div class="email">
+                  <div class="send">
+                     <i class="zmdi zmdi-mail-send"></i>
+                  </div>
+                  <input type="email"  name="email"
+                     placeholder="Your e-mail , mobile ,...">
+               </div>
+               <div class="contact">
+                  <div class="contact-inner">
+                     <i class="zmdi zmdi-map"></i>
+                     <div class="contact-info">
+                        <span>No 40 Baria Sreet 133/2</span>
+                     </div>
+                  </div>
+                  <div class="contact-inner">
+                     <i class="zmdi zmdi-phone"></i>
+                     <div class="contact-info">
+                        <span><a href="tel:15618003666666">+ (156) 1800-366-6666</a></span>
+                     </div>
+                  </div>
+                  <div class="contact-inner">
+                     <i class="zmdi zmdi-whatsapp"></i>
+                     <div class="contact-info">
+                        <span>+ (156) 1800-366-6666</span>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="page-content">
+      <section class="shop-single-v1-section section-box featured-hp-1 featured-hp-4">
+         <div class="woocommerce">
+            <div class="container">
+               <div class="content-area">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="woocommerce-product-gallery">
+                           
+                           <div class="owl-carousel owl-loaded owl-drag">
+
+
+
+                              <div class="owl-stage-outer">
+                                 <div class="owl-stage"
+                                    style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1665px;">
+                                    <div class="owl-item active" style="width: 555px;">
+                                       <div class="item-video">
+                                          <video controls poster="images/shop-single-v1-3.jpg" width="555">
+                                             <source src="images/20221125_12d00f023126679a_387618112253_mp4_264_hd_unlimit_taobao.mp4" type="video/mp4" >
+                                          </video>
+                                       </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 555px;">
+                                       <div class="item">
+                                          <img src="images/shop-single-v1-2.jpg" alt="product">
+                                       </div>
+                                    </div>
+                                    <div class="owl-item" style="width: 555px;">
+                                       <div class="item">
+                                          <img src="images/shop-single-v1-1.jpg" alt="product">
+                                        </div>
+                                    </div>
+                                   
+                                 </div>
+                              </div>
+                              <div class="owl-nav disabled"><button type="button" role="presentation"
+                                    class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button"
+                                    role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div>
+                              <div class="owl-dots"><button role="button"
+                                    class="owl-dot active"><span></span></button><button role="button"
+                                    class="owl-dot"><span></span></button><button role="button"
+                                    class="owl-dot"><span></span></button></div>
+                              <div class="owl-thumbs"><button class="owl-thumb-item active"><img
+                                       src="images/shop-single-v1-1.jpg" alt="product"></button><button
+                                    class="owl-thumb-item"><img src="images/shop-single-v1-2.jpg"
+                                       alt="product"></button><button class="owl-thumb-item"><img
+                                       src="images/shop-single-v1-3.jpg" alt="product"></button></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="summary entry-summary">
+                           <h1 class="product_title entry-title">Viggo Chair - Yellow</h1>
+                           <div class="woocommerce-product-rating">
+                              <div class="star-rating">
+                                 <i class="zmdi zmdi-star"></i>
+                                 <i class="zmdi zmdi-star"></i>
+                                 <i class="zmdi zmdi-star"></i>
+                                 <i class="zmdi zmdi-star"></i>
+                                 <i class="zmdi zmdi-star-outline"></i>
+                              </div>
+                              <a href="#" class="woocommerce-review-link">(2 customer review)</a>
+                           </div>
+                           <p class="price">
+                              <del>
+                                 <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>
+                                    147
+                                 </span>
+                              </del>
+                              <ins>
+                                 <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>
+                                    135
+                                 </span>
+                              </ins>
+                           </p>
+                           <div class="woocommerce-product-details__short-description">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                 exercitation ullamco.</p>
+                           </div>
+                           <form class="cart" method="post">
+                              <div class="quantity">
+                                 <input type="number" name="quantity" id="quantity" value="1" min="1"
+                                    class="nput-text qty text">
+                                 <span class="modify-qty plus" onclick="Increase()">+</span>
+                                 <span class="modify-qty minus" onclick="Decrease()">-</span>
+                              </div>
+                              <button type="submit" name="add-to-cart"
+                                 class="single_add_to_cart_button button alt au-btn btn-small">Add to cart<i
+                                    class="zmdi zmdi-arrow-right"></i></button>
+                           </form>
+                           <div class="product_meta">
+                              <span class="sku_wrapper">
+                                 Sku:
+                                 <span class="sku">MQ000137417_33</span>
+                              </span>
+                              <span class="posted_in">
+                                 Category:
+                                 <a href="#">Furniture</a>
+                              </span>
+                              <span class="tagged_as">
+                                 Tag:
+                                 <a href="#">Home Decor, Lightting</a>
+                              </span>
+                           </div>
+                           <div class="product-share">
+                              <span>Share:</span>
+                              <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                              <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                              <a href="#"><i class="zmdi zmdi-tumblr"></i></a>
+                              <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                           </div>
+                        </div>
+                        <div class="woocommerce-tabs">
+                           <ul class="nav nav-tabs wc-tabs" id="myTab" role="tablist">
+                              <li class="nav-item description_tab" id="tab-title-description" role="tab"
+                                 aria-controls="tab-description" aria-selected="true">
+                                 <a class="nav-link active" href="#tab-description" data-toggle="tab">Description</a>
+                              </li>
+                              <li class="nav-item additional_information_tab" id="tab-title-additional_information"
+                                 role="tab" aria-controls="tab-additional_information" aria-selected="false">
+                                 <a class="nav-link" href="#tab-additional_information" data-toggle="tab">Additional
+                                    information</a>
+                              </li>
+                              <li class="nav-item reviews_tab" id="tab-title-reviews" role="tab"
+                                 aria-controls="tab-reviews" aria-selected="false">
+                                 <a class="nav-link" href="#tab-reviews" data-toggle="tab">Reviews(2)</a>
+                              </li>
+                           </ul>
+                           <div class="tab-content" id="myTabContent">
+                              <div class="woocommerce-Tabs-panel tab-pane fade show active" id="tab-description"
+                                 role="tabpanel" aria-labelledby="tab-title-description">
+                                 <p>On the other hand, we denounce with righteous indignation and dislike men who are so
+                                    beguiled and demoralized by the charms of pleasure of the moment, so blinded by
+                                    desire.</p>
+                              </div>
+                              <div class="woocommerce-Tabs-panel tab-pane" id="tab-additional_information"
+                                 role="tabpanel" aria-labelledby="tab-title-additional_information">
+                                 <table class="shop_attributes">
+                                    <tbody>
+                                       <tr>
+                                          <th>Weight</th>
+                                          <td class="product_weight">5.8 kg</td>
+                                       </tr>
+                                       <tr>
+                                          <th>Dimensions</th>
+                                          <td class="product_dimensions">H: 76 cm W: 56 cm D: 52 cm</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="woocommerce-Tabs-panel tab-pane" id="tab-reviews" role="tabpanel"
+                                 aria-labelledby="tab-title-reviews">
+                                 <div class="woocommerce-Reviews" id="reviews">
+                                    <h2>2 review for Reframe Your Viewpoints</h2>
+                                    <div id="comments">
+                                       <div class="comment-list">
+                                          <div class="comment-item">
+                                             <div class="comment-content">
+
+                                                <div class="comment-body">
+                                                   <div class="comment-author">
+                                                      <span class="author">Emily Valdez</span>
+                                                      <div class="star-rating">
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star-outline"></i>
+                                                      </div>
+                                                   </div>
+                                                   <span class="comment-time">March 28, 2020</span>
+                                                   <p>But I must explain to you how all this mistaken idea of denouncing
+                                                      pleasure and praising pain was.</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="comment-item">
+                                             <div class="comment-content">
+
+                                                <div class="comment-body">
+                                                   <div class="comment-author">
+                                                      <span class="author">Emma Hayes</span>
+                                                      <div class="star-rating">
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                         <i class="zmdi zmdi-star"></i>
+                                                      </div>
+                                                   </div>
+                                                   <span class="comment-time">March 28, 2020</span>
+                                                   <p>Nor again is there anyone who loves or pursues or desires to
+                                                      obtain pain of itself, because it is pain.</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div id="review_form_wrapper">
+                                       <div id="review_form">
+                                          <div id="respond" class="comment-respond">
+                                             <form id="commentform" class="comment-form common-form js-contact-form"
+                                                action="includes/contact-form.php" method="POST">
+                                                <p class="comment-notes">
+                                                   <span>Add a review</span>
+                                                   <span id="email-notes">
+                                                      Your email address will not be published. Required fields are
+                                                      marked
+                                                      <span class="required">*</span>
+                                                   </span>
+                                                </p>
+                                                <div class="comment-form-rating">
+                                                   <label>Your rating</label>
+                                                   <p class="stars">
+                                                      <a href="#" class="star-1"><i
+                                                            class="zmdi zmdi-star-outline"></i></a>
+                                                      <a href="#" class="star-2"><i
+                                                            class="zmdi zmdi-star-outline"></i></a>
+                                                      <a href="#" class="star-3"><i
+                                                            class="zmdi zmdi-star-outline"></i></a>
+                                                      <a href="#" class="star-4"><i
+                                                            class="zmdi zmdi-star-outline"></i></a>
+                                                      <a href="#" class="star-5"><i
+                                                            class="zmdi zmdi-star-outline"></i></a>
+                                                   </p>
+                                                </div>
+                                                <p class="comment-form-author">
+                                                   <input id="author" name="author" type="text" required=""
+                                                      placeholder="Your Name">
+                                                </p>
+                                                <p class="comment-form-email">
+                                                   <input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+                                                      name="email" id="email" placeholder="Your Email">
+                                                </p>
+                                                <p class="comment-form-comment">
+                                                   <textarea id="comment" name="comment" required=""
+                                                      placeholder="Write Your Review..."></textarea>
+                                                </p>
+                                                <p class="form-submit">
+                                                   <input name="submit" type="submit" id="submit"
+                                                      class="submit au-btn btn-small" value="Submit">
+                                                   <span><i class="zmdi zmdi-arrow-right"></i></span>
+                                                </p>
+                                             </form>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="view-all">
+            <a href="index.html" class="au-btn btn-small"><i class="zmdi zmdi-arrow-left"></i> View All</a>
+         </div>
+      </section>
+   </div>
+
+
+   <a href="#" id="back-to-top"></a>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/sketch.min.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/OwlCarousel2Thumbs.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/data.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+<script>
+   function onloadbody() {
+      $('.owl-carousel').owlCarousel({
+         thumbs: true, items: 1 ,center:true , startPosition: 10, video:true, thumbImage: false, thumbsPrerendered: true, thumbContainerClass: 'owl-thumbs', thumbItemClass: 'owl-thumb-item'
+      });
+      $('.price').each(function (index) {
+         var divdata = $(this).attr('data');
+         var item = data.find(x => x.pid == divdata);
+         if (item != null) {
+            var delstring = "";
+            if (item.old != null) {
+               delstring = ` <del> <span class="woocommerce-Price-amount amount"> <span class="woocommerce-Price-currencySymbol">$</span> ${item.old} T </span> </del>`;
+            }
+            var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount"> <span class="woocommerce-Price-currencySymbol">$</span> ${item.price} T </span> </ins> </span>`;
+            $(this).html(spanstring);
+         }
+      });
+   }
+</script>
+<footer class="footer-section section-box">
+   <div class="wrapper">
+      <div class="footer-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                  <div class="footer-items">
+                     <div class="logo">
+                        <a href="index.html"><img id="footer-logo" src="images/icons/logo-white.png" alt="logo"></a>
+                     </div>
+                     <div class="contact">
+                        <i class="zmdi zmdi-map"></i>
+                        <span>No 40 Baria Sreet 133/2</span>
+                     </div>
+                     <div class="contact">
+                        <i class="zmdi zmdi-phone"></i>
+                        <span><a href="tel:15618003666666">+ (156) 1800-366-6666</a></span>
+                     </div>
+                     <div class="contact">
+                        <i class="zmdi zmdi-whatsapp"></i>
+                        <span>+ (156) 1800-366-6666</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                  <div class="footer-items">
+                     <p>پ.ن: حرف T در قیمتها معادل میلیون تومان است</p>
+                     <h4>برقراری تماس</h4>
+                     <div class="email">
+                        <div class="send">
+                           <i class="zmdi zmdi-mail-send"></i>
+                        </div>
+                        <input type="email"  name="email"
+                           placeholder="Your e-mail , mobile , ...">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+</html>

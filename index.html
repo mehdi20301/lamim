@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>E-Bik Home</title>
+   <link rel="icon" type="image/png" href="images/icons/favicon16.png">
+   <meta name="description" content>
+   <meta name="author" content>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css?v1.3">
+   <link rel="stylesheet" type="text/css" href="css/material-design-iconic-font.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/settings.css">
+   <link rel="stylesheet" href="css/style.min.css?v1.3" />
+   <style>
+      :root {
+         --col-particle: red;
+      }
+   </style>
+</head>
+
+<body class="homepages-1" onload='onloadbody()'>
+   <!-- <div class="images-preloader">
+         <div id="preloader_1" class="rectangle-bounce">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </div> -->
+   <header class="header">
+      <div class="header-hp-1 style-header-hp-1">
+         <div id="js-navbar-fixed" class="menu-desktop">
+            <div class="container-fluid">
+               <div class="menu-desktop-inner">
+                  <div class="logo">
+                     <a href="index.html"><img id="header-logo" src="images/icons/logo-black.png" alt="logo"></a>
+                  </div>
+                  <div class="header-right">
+                     <div class="site-header-cart">
+                        <div>
+                           <a href="basket.html">
+                              <img src="images/icons/shopping-cart-black-icon.png" alt="cart">
+                              <span id="basket-count"></span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="canvas canvas-btn-wrap">
+                        <button class="canvas-images canvas-btn" data-toggle="modal" data-target="#canvasModal">
+                           <img src="images/icons/header-icon-3.png" alt="canvas">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="searchModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <form id="searchModal__form" method="POST">
+                              <button id="searchModal__submit" type="submit">
+                                 <i class="zmdi zmdi-search"></i>
+                              </button>
+                              <input id="searchModal__input" type="text" name="search" placeholder="Search Here ..." />
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="canvasModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <div class="canvas-content">
+                              <div class="logo">
+                                 <a href="index.html"><img id="canvas-logo" src="images/icons/logo-black.png"
+                                       alt="logo"></a>
+                              </div>
+                              <div class="contact">
+                                 <p id="notifyheader" style="display: none; color: lightgreen;"></p>
+                                 <p>لطفا برای برقراری تماس یا در تلگرام پیام خود را ارسال کنید و یا شماره موبایل خود را در کادر پایین وارد نمایید تا در اولین فرصت با شما تماس گرفته شود.</p>
+                                 <div class="contact-inner">
+                                    <img width="20" src="images/icons/telegram-logo.png">
+                                    <div class="contact-info">
+                                       <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in Telegram</a></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="email">
+                                 <div id="sendheader" class="send">
+                                    <i class="zmdi zmdi-mail-send"></i>
+                                 </div>
+                                 <input type="email"  id="emailheader"
+                                    placeholder="Mobile Number,...">
+                              </div>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div class="clearfix page-content">
+      <section id="slider-main" class="revslider-wrap full-screen clearfix mb-5">
+         <div id="particles"></div>
+         <div>
+            <div id="title-quote"></div>
+         </div>
+      </section>
+      <section class="featured-hp-1 clearfix">
+         <div class="container">
+            <div class="featured-content woocommerce">
+               <h2 class="special-heading">لیست محصولات</h2>
+               <div class="content-area">
+                  <div id="row-products" class="row">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="categories-hp-1 mb-5 clearfix">
+         <div class="container">
+            <div class="featured-content woocommerce">
+               <h2 class="special-heading">دسته بندی محصولات </h2>
+            </div>
+            <div class="categories-content">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                     <div class="categories-detail lighting">
+                        <a href="blog.html?bid=emotor" class="images"><img src="images/hp-1-categories-1.jpg"
+                              alt="Lighting"></a>
+                        <div class="product">
+                           <a href="blog.html?bid=emotor">
+                              <span class="name">
+                                 <span class="line">- </span>
+                                 لوازم جانبی
+                              </span>
+                              <span id="emotor-qty" class="quantity">- 12 محصول</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                     <div class="categories-detail furniture">
+                        <a href="blog.html?bid=motorcycle" class="images"><img src="images/hp-1-categories-2.jpg"
+                              alt="Furniture"></a>
+                        <div class="product">
+                           <a href="blog.html?bid=motorcycle">
+                              <span class="name">
+                                 <span class="line">- </span>
+                                 اسکوتر و موتور برقی
+                              </span>
+                              <span id="motorcycle-qty" class="quantity">- 15 محصول</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                     <div class="categories-detail decoration">
+                        <a href="blog.html?bid=ebike" class="images"><img src="images/hp-1-categories-3.jpg"
+                              alt="Decoration"></a>
+                        <div class="product">
+                           <a href="blog.html?bid=ebike">
+                              <span class="name">
+                                 <span class="line">- </span>
+                                 دوچرخه برقی
+                              </span>
+                              <span id="ebike-qty" class="quantity">- 4 محصول</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+   </div>
+
+
+   <a href="#" id="back-to-top"><i class="zmdi zmdi-long-arrow-up zmdi-hc-fw"></i></a>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/particlesjs.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/data.js"></script>
+   <script src="js/custom.js?v1.3"></script>
+</body>
+<script>
+   let x = 0;
+   let textIndex = 0 ;
+   var favItems = [];
+   let textEffect = ["امکان خرید اقساطی موتور و دوچرخه های برقی ..." ,"شرایط اقساط متنوع و عالی ..." , "لطفا برای کسب اطلاعات بیشتر از طریق تلگرام تماس برقرار کنید" , "موتور و دوچرخه های برقی ، وسیله های حمل و نقل آینده ..." , "دوچرخه های برقی بدون نیاز به پلاک ..."];
+   let container = document.getElementById("title-quote");
+
+   function animate() {
+      if(x==0) container.innerHTML = '';
+      if (x < textEffect[textIndex].length) {
+         container.innerHTML += textEffect[textIndex].charAt(x);
+         x++;
+         setTimeout(animate, 80);
+      }else{
+         textIndex = (textIndex < textEffect.length)? textIndex + 1 : 0;
+         x=0;
+         setTimeout(animate, 5000);
+      }
+   }
+
+   function onloadbody() {
+      doload();
+      pageback = getUrlParameter('back');
+      if (pageback == false) dolog(" index page");
+      var basket = JSON.parse(localStorage.getItem('basket')) || [];
+      basketCountNotify(basket);
+      particlesJS("particles", {
+         "particles": {
+            "number": {
+               "value": 80,
+               "density": {
+                  "enable": true,
+                  "value_area": 800
+               }
+            },
+            "color": {
+               "value": ["#BD10E0", "#B8E986", "#50E3C2", "#FFD300", "#E86363", "#0D1e20", "#08E016", "#104322", "#1F5390", "#28F3E3"]
+            },
+            "shape": {
+               "type": "circle",
+               "stroke": {
+                  "width": 0,
+                  "color": "#b6b2b2"
+               }
+            },
+            "size": {
+               "value": 5,
+               "random": false,
+
+            },
+            "line_linked": {
+               "enable": false
+            },
+            "move": {
+               "enable": true,
+               "speed": 1,
+               "direction": "none",
+               "random": false,
+               "straight": false,
+               "out_mode": "bounce",
+               "bounce": false,
+               "attract": {
+                  "enable": false,
+                  "rotateX": 600,
+                  "rotateY": 1200
+               }
+            }
+         },
+         "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+               "onhover": {
+                  "enable": true,
+                  "mode": "bubble"
+               },
+               "onclick": {
+                  "enable": false,
+                  "mode": "push"
+               },
+               "resize": true
+            },
+            "modes": {
+               "grab": {
+                  "distance": 400,
+                  "line_linked": {
+                     "opacity": 1
+                  }
+               },
+               "bubble": {
+                  "distance": 10,
+                  "size": 10,
+                  "duration": 2,
+                  "opacity": 8,
+                  "speed": 3
+               },
+               "repulse": {
+                  "distance": 200,
+                  "duration": 0.4
+               },
+               "push": {
+                  "particles_nb": 4
+               },
+               "remove": {
+                  "particles_nb": 2
+               }
+            }
+         },
+         "retina_detect": false
+      });
+      animate();
+
+      showQty('ebike' , '#ebike-qty' );
+      showQty('emotor' , '#emotor-qty' );
+      showQty('motorcycle' , '#motorcycle-qty' );
+
+      favItems = JSON.parse(localStorage.getItem('favItems')) || [];
+      var products = '';
+      data.forEach(item => {
+         var fav = favItems.find(x => x == item.pid);
+         var delstring = item.old != null ? `<del> <span class="woocommerce-Price-amount amount"> ${item.old} T </span> </del>` : "";
+         var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount">  ${item.price} T </span> </ins> </span>`;
+
+         var imgsecond = item.pic.length > 1 ? `<img class="image-secondary" src="images/${item.pic[1]}" alt="product">` : '';
+         var linkimg = `<div class="col">
+                           <div class="product type-product">
+                              <div class="woocommerce-LoopProduct-link">
+                                 <div class="product-image">
+                                    <div class="clearfix">
+                                       <a href="detail.html?pid=${item.pid}" class="wp-post-image">
+                                       <img src="images/${item.pic[0]}" alt="product">${imgsecond}
+                                       </a>
+                                    </div>
+                                    <div class="yith-wcwl-add-button show">
+                                       <a data="${item.pid}" class="add_to_wishlist">
+                                       <i class="zmdi zmdi-favorite${fav != null ? ' red' : '-outline'}"></i>
+                                       </a>
+                                    </div>
+                                    <h5 class="woocommerce-loop-product__title mb-2"><a href="detail.html?pid=${item.pid}">${item.title}</a></h5>
+                                    <div class="price mb-2">${spanstring}</div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>`;
+         products += linkimg;
+      });
+      $('#row-products').html(products);
+      $('.add_to_wishlist').click(function () {
+         var favitems = JSON.parse(localStorage.getItem('favItems')) || [];
+         var divdata = $(this).attr('data');
+         dolog(" wishlist add " + divdata);
+         var index = favitems.indexOf(divdata);
+         if (index > -1) {
+            favitems.splice(index, 1);
+            $(this).html(`<i class="zmdi zmdi-favorite-outline"></i>`);
+         }
+         else {
+            favitems.push(divdata);
+            $(this).html(`<i class="zmdi zmdi-favorite red"></i>`);
+         }
+         localStorage.setItem('favItems', JSON.stringify(favitems));
+      });
+   }
+</script>
+<footer class="footer-section section-box">
+   <div class="wrapper">
+      <div class="footer-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-12 col-12">
+                  <div class="footer-items">
+                     <div class="contact">
+                        <img width="20" src="images/icons/telegram-logo.png">
+                        <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in Telegram</a></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-10 col-10">
+                     <div class="footer-items">
+                        <div class="email">
+                           <div class="send" id="sendfooter">
+                              <i class="zmdi zmdi-mail-send"></i>
+                           </div>
+                           <input type="email"  id="emailfooter"
+                              placeholder="  لطفا شماره تماس خود را ثبت کنید">
+                        </div>
+                        <p id="notifyfooter" style="display: none; color:yellow"></p>
+                        <p>پ.ن: حرف T در قیمتها معادل میلیون تومان است</p>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+</html>

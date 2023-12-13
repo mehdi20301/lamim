@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Homepages 1</title>
+   <meta name="description" content>
+   <meta name="author" content>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css?v1.21">
+   <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="css/settings.css?v1.21">
+   <link rel="stylesheet" href="css/layers.css">
+   <link rel="stylesheet" href="css/navigation.css">
+   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="css/style.min.css?v1.21" />
+</head>
+
+<body class="homepages-1" onload='onloadbody()'>
+   <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <video id="modal-vid" autoplay controls>
+               <source id="modal-vid-src">
+            </video>
+         </div>
+      </div>
+   </div>
+   <header class="header">
+      <div class="header-hp-1 style-header-hp-1">
+         <div id="js-navbar-fixed" class="menu-desktop">
+            <div class="container-fluid">
+               <div class="menu-desktop-inner">
+                  <div class="logo">
+                     <a href="index.html"><img id="header-logo" src="images/icons/logo-black.png" alt="logo"></a>
+                  </div>
+                  <div class="header-right">
+                     <div class="site-header-cart">
+                        <div>
+                           <a href="basket.html">
+                              <img src="images/icons/shopping-cart-black-icon.png" alt="cart">
+                              <span id="basket-count"></span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="canvas canvas-btn-wrap">
+                        <button class="canvas-images canvas-btn" data-toggle="modal" data-target="#canvasModal">
+                           <img src="images/icons/header-icon-3.png" alt="canvas">
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="searchModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <form id="searchModal__form" method="POST">
+                              <button id="searchModal__submit" type="submit">
+                                 <i class="zmdi zmdi-search"></i>
+                              </button>
+                              <input id="searchModal__input" type="text" name="search" placeholder="Search Here ..." />
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="modal fade" id="canvasModal" role="dialog">
+                  <button class="close" type="button" data-dismiss="modal">
+                     <i class="zmdi zmdi-close"></i>
+                  </button>
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body">
+                           <div class="canvas-content">
+                              <div class="logo">
+                                 <a href="index.html"><img id="canvas-logo" src="images/icons/logo-black.png"
+                                       alt="logo"></a>
+                              </div>
+                              <div class="contact">
+                                 <p>لطفا برای برقراری تماس یا در تلگرام پیام خود را ارسال کنید و یا شماره موبایل خود را در کادر پایین وارد نمایید تا در اولین فرصت با شما تماس گرفته شود.</p>
+                                 <div class="contact-inner">
+                                    <img width="20" src="images/icons/telegram-logo.png">
+                                    <div class="contact-info">
+                                       <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in Telegram</a></span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="email">
+                                 <div class="send">
+                                    <i class="zmdi zmdi-mail-send"></i>
+                                 </div>
+                                 <input type="email"  name="email"
+                                    placeholder="Your e-mail , mobile ,...">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <div class="page-content">
+      <section class="shop-cart-section section-box checkout-section">
+         <div class="woocommerce">
+            <div class="container">
+               <div class="entry-content">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 rtl">
+                        <div class="cart-collaterals">
+                           <form class="checkout woocommerce-checkout" method="POST">
+                              <div class="woocommerce-billing-fields">
+                                 <h2>اطلاعات صورتحساب</h2>
+                                 <div class="woocommerce-billing-fields__field-wrapper">
+                                    <p class="form-row-first">
+                                       <input type="text" class="input-text " id="billing_name"
+                                          placeholder="نام و مشخصات">
+                                    </p>
+                                    <p class="form-row-last">
+                                       <input type="text" class="input-text " name="billing_phone" id="billing_phone"
+                                          placeholder="تلفن">
+                                    </p>
+                                    <p class="form-row-wide">
+                                       <input type="text" class="input-text " name="billing_address"
+                                          id="billing_address" placeholder="آدرس">
+                                    </p>
+
+                                    <p class="notes" id="order_comments_field">
+                                       <textarea name="order_comments" class="input-text " id="order_comments"
+                                          placeholder="لطفا توضیحات خود را بابت سفارش ثبت نمایید"></textarea>
+                                    </p>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 rtl">
+                        <div class="woocommerce-checkout-review-order">
+                           <h2>جزئیات</h2>
+                           <table class="shop_table">
+                              <tbody id="basket-body">
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+
+
+   <a href="#" id="back-to-top"></a>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="js/data.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+<script>
+   var trbodystring = '';
+   function onloadbody() {
+      baskets = getUrlParameter('baskets');
+      if (baskets != false) {
+         var items = baskets.split(',');
+         var basket = [];
+         items.forEach(i => {
+            var item = i.split(':');
+            var obj = { pid: item[0], qty: item[1] }
+            basket.push(obj);
+         });
+
+         basketCountNotify(basket);
+         basket.forEach(element => {
+            var item = data.find(x => x.pid == element.pid);
+            var trstring = `<tr id='tr-${item.pid}' class="cart_item">
+                        <td class="product-name">
+                        <img src="images/${item.pic[0]}" alt="product">
+                        <div class="review-wrap">
+                        <span class="cart_item_title"><a href="detail.html?pid=${item.pid}">${item.title}</a></span>
+                        <span class="product-quantity">x${element.qty}</span>
+                        </div>
+                        </td>
+                        <td class="product-total">
+                        <span class="woocommerce-Price-amount amount">
+                        <span class="woocommerce-Price-currencySymbol">T</span>
+                        ${item.price}
+                        </span>
+                        </td>
+                        </tr>`;
+            trbodystring += trstring
+         });
+         $('#basket-body').html(trbodystring);
+      }
+      var tel = getUrlParameter('tel');
+      var adrs = getUrlParameter('adrs');
+      var name = getUrlParameter('name');
+      var desc = getUrlParameter('desc');
+      $('#billing_name').val(name);
+      $('#billing_phone').val(tel);
+      $('#billing_address').val(adrs);
+      $('#order_comments').val(desc.replaceAll('_end_','\n'));
+
+   }
+</script>
+<footer class="footer-section section-box">
+   <div class="wrapper">
+      <div class="footer-content">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                  <div class="footer-items">
+                     <div class="logo">
+                        <a href="index.html"><img id="footer-logo" src="images/icons/logo-white.png" alt="logo"></a>
+                     </div>
+                     <div class="contact">
+                        <i class="zmdi zmdi-map"></i>
+                        <span>No 40 Baria Sreet 133/2</span>
+                     </div>
+                     <div class="contact">
+                        <i class="zmdi zmdi-phone"></i>
+                        <span><a href="tel:15618003666666">+ (156) 1800-366-6666</a></span>
+                     </div>
+                     <div class="contact">
+                        <i class="zmdi zmdi-whatsapp"></i>
+                        <span>+ (156) 1800-366-6666</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                  <div class="footer-items">
+                     <p>پ.ن: حرف T در قیمتها معادل میلیون تومان است</p>
+                     <h4>برقراری تماس</h4>
+                     <div class="email">
+                        <div class="send">
+                           <i class="zmdi zmdi-mail-send"></i>
+                        </div>
+                        <input type="email"  name="email"
+                           placeholder="Your e-mail , mobile , ...">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+
+</html>
