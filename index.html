@@ -109,7 +109,21 @@
             <div id="title-quote"></div>
          </div> -->
       </section>
-      <section class="categories-hp-1 mb-5 clearfix">
+      <section class="breadcrumb-area position-relative mt-1" data-background="images/bg-2.jpeg" data-overlay="dark" data-opacity="5" style="height:300px;background-image: url(&quot;images/bg-2.jpeg&quot;);">
+         <div class="overlay-top"></div>
+         <div class="overlay-bottom"></div>
+         <div class="container">
+             <div class="row pt-5">
+                 <div class="col-xl-12 page-title">
+                     <h3>فروش انواع محصولات قهوه و ماشین های قهوه ساز و تنقلات لمیم</h3>
+                     <p>
+                        این فروشگاه با هدف فروش محصولات با کیفیت و ممتاز و ارسال سریع محصولات راه اندازی شده
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </section>
+      <section class="categories-hp-1 mt-5 mb-5 clearfix">
          <div class="container">
             <!-- <div class="featured-content woocommerce">
                <h2 class="special-heading">دسته بندی محصولات </h2>
@@ -226,8 +240,8 @@
       var products = '';
       data.forEach(item => {
          var fav = favItems.find(x => x == item.pid);
-         var delstring = item.old != null ? `<del> <span class="woocommerce-Price-amount amount"> ${item.old} T </span> </del>` : "";
-         var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount">  ${item.price} T </span> </ins> </span>`;
+         var delstring = item.old != null ? `<del> <span class="woocommerce-Price-amount amount"> ${item.old.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} T </span> </del>` : "";
+         var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount">  ${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") } T </span> </ins> </span>`;
 
          var imgsecond = item.pic.length > 1 ? `<img class="image-secondary" src="images/${item.pic[1]}" alt="product">` : '';
          var linkimg = `<div class="col">
@@ -332,7 +346,7 @@
                               placeholder="  لطفا شماره تماس خود را ثبت کنید">
                         </div>
                         <p id="notifyfooter" style="display: none; color:yellow"></p>
-                        <p>پ.ن: حرف T در قیمتها معادل میلیون تومان است</p>
+                        <p>پ.ن: حرف T در قیمتها معادل  تومان است</p>
                      </div>
                </div>
             </div>

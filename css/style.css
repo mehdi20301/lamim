@@ -1517,3 +1517,21 @@ label{float: right;}
 .row hr{
     border-top: 1px solid rgba(0,0,0,.1);
 }
+.breadcrumb-area .shape {
+    position: absolute;
+    width: 100%;
+}
+.breadcrumb-area .shape__1 {
+    top: -10px;
+    left: 0;
+}
+
+
+.page-title p, h3{
+    color: white !important;
+    border-right: red solid;
+    top:20px;
+    direction: rtl;
+    text-align: right;
+    padding-right: 10px;
+}
