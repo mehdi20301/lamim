@@ -1,165 +1,196 @@
-var data = 
-[
-    { pid: 'eb-01' , bid:'ebike', price: 175000 ,pic:['pp-1.png'],
-        title:'دوچرخه برقی مدل EB-01', old: 225000 ,
-        shortdesc:`<p>دوچرخه برقی  دارای موتور قدرتمند و باتری با قابلیت پیمودن مسافت‌های بلند با سرعت بالا می‌باشد. با یک شارژ، می‌توانید تا 120 کیلومتر با سرعت هیجان‌انگیزی به میزان 50 کیلومتر در ساعت طی کنید.</p>`,
-        desc:`<p>در این دوچرخه، سه حالت سواری متفاوت وجود دارد:
-        حالت تمام برقی: در این حالت، می‌توانید با استفاده از اهرم گاز، هنگامی که خسته شده یا در مسیرهای شیب‌دار قرار گرفته‌اید، به راحتی از توان موتور استفاده کنید.
-        حالت تمام ورزشی: در این حالت، شما می‌توانید با رکاب زدن به میزان دلخواه، ورزش کنید و فعالیت‌های ورزشی خود را انجام دهید.
-        حالت ترکیبی: این حالت به شما امکان می‌دهد همزمان با رکاب زدن، از کمک موتور نیز استفاده کنید.</p>`,
-        meta:`<span class="sku_wrapper">
-                    Sku:
-                    <span class="sku">MQ000137417_33</span>
-                </span>
-                <span class="posted_in">
-                    Category:
-                    <a href="#">Furniture</a>
-                </span>
-                <span class="tagged_as">
-                    Tag:
-                    <a href="#">Home Decor, Lightting</a>
-                </span>`,
-        info:` <table class="shop_attributes">
-                    <tbody>
-                    <tr>
-                        <th>Weight</th>
-                        <td class="product_weight">5.8 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Dimensions</th>
-                        <td class="product_dimensions">H: 76 cm W: 56 cm D: 52 cm</td>
-                    </tr>
-                    </tbody>
-                </table>`
-    }, 
-    { pid: 'eb-02', bid:'ebike', price: 195000, old: 248000,pic:['s-p-4.png'],
-    title:'دوچرخه برقی مدل EB-02',
-        shortdesc:`<p>دوچرخه برقی  دارای موتور قدرتمند و باتری با قابلیت پیمودن مسافت‌های بلند با سرعت بالا می‌باشد. با یک شارژ، می‌توانید تا 120 کیلومتر با سرعت هیجان‌انگیزی به میزان 50 کیلومتر در ساعت طی کنید.</p>`,
-        desc:`<p>در این دوچرخه، سه حالت سواری متفاوت وجود دارد:
-        حالت تمام برقی: در این حالت، می‌توانید با استفاده از اهرم گاز، هنگامی که خسته شده یا در مسیرهای شیب‌دار قرار گرفته‌اید، به راحتی از توان موتور استفاده کنید.
-        حالت تمام ورزشی: در این حالت، شما می‌توانید با رکاب زدن به میزان دلخواه، ورزش کنید و فعالیت‌های ورزشی خود را انجام دهید.
-        حالت ترکیبی: این حالت به شما امکان می‌دهد همزمان با رکاب زدن، از کمک موتور نیز استفاده کنید.</p>`,
-        meta:`<span class="sku_wrapper">
-                    Sku:
-                    <span class="sku">MQ000137417_33</span>
-                </span>
-                <span class="posted_in">
-                    Category:
-                    <a href="#">Furniture</a>
-                </span>
-                <span class="tagged_as">
-                    Tag:
-                    <a href="#">Home Decor, Lightting</a>
-                </span>`,
-        info:` <table class="shop_attributes">
-                    <tbody>
-                    <tr>
-                        <th>Weight</th>
-                        <td class="product_weight">5.8 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Dimensions</th>
-                        <td class="product_dimensions">H: 76 cm W: 56 cm D: 52 cm</td>
-                    </tr>
-                    </tbody>
-                </table>`
-    }, 
-    { pid: 'eb-03', bid:'ebike', price: 159000, old: 195000,pic:['pp-3.png'],
-    title:'دوچرخه برقی مدل EB-03',
-        shortdesc:`<p>دوچرخه برقی  دارای موتور قدرتمند و باتری با قابلیت پیمودن مسافت‌های بلند با سرعت بالا می‌باشد. با یک شارژ، می‌توانید تا 120 کیلومتر با سرعت هیجان‌انگیزی به میزان 50 کیلومتر در ساعت طی کنید.</p>`,
-        desc:`<p>در این دوچرخه، سه حالت سواری متفاوت وجود دارد:
-        حالت تمام برقی: در این حالت، می‌توانید با استفاده از اهرم گاز، هنگامی که خسته شده یا در مسیرهای شیب‌دار قرار گرفته‌اید، به راحتی از توان موتور استفاده کنید.
-        حالت تمام ورزشی: در این حالت، شما می‌توانید با رکاب زدن به میزان دلخواه، ورزش کنید و فعالیت‌های ورزشی خود را انجام دهید.
-        حالت ترکیبی: این حالت به شما امکان می‌دهد همزمان با رکاب زدن، از کمک موتور نیز استفاده کنید.</p>`,
-        meta:`<span class="sku_wrapper">
-                    Sku:
-                    <span class="sku">MQ000137417_33</span>
-                </span>
-                <span class="posted_in">
-                    Category:
-                    <a href="#">Furniture</a>
-                </span>
-                <span class="tagged_as">
-                    Tag:
-                    <a href="#">Home Decor, Lightting</a>
-                </span>`,
-        info:` <table class="shop_attributes">
-                    <tbody>
-                    <tr>
-                        <th>Weight</th>
-                        <td class="product_weight">5.8 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Dimensions</th>
-                        <td class="product_dimensions">H: 76 cm W: 56 cm D: 52 cm</td>
-                    </tr>
-                    </tbody>
-                </table>`
-    }, 
-    { pid: 'eb-04', bid:'motorcycle', price: 178000, old: 235000,pic:['pp-2.png'],
-    title:'دوچرخه برقی مدل EB-04',
-        shortdesc:`<p>دوچرخه برقی  دارای موتور قدرتمند و باتری با قابلیت پیمودن مسافت‌های بلند با سرعت بالا می‌باشد. با یک شارژ، می‌توانید تا 120 کیلومتر با سرعت هیجان‌انگیزی به میزان 50 کیلومتر در ساعت طی کنید.</p>`,
-        desc:`<p>در این دوچرخه، سه حالت سواری متفاوت وجود دارد:
-        حالت تمام برقی: در این حالت، می‌توانید با استفاده از اهرم گاز، هنگامی که خسته شده یا در مسیرهای شیب‌دار قرار گرفته‌اید، به راحتی از توان موتور استفاده کنید.
-        حالت تمام ورزشی: در این حالت، شما می‌توانید با رکاب زدن به میزان دلخواه، ورزش کنید و فعالیت‌های ورزشی خود را انجام دهید.
-        حالت ترکیبی: این حالت به شما امکان می‌دهد همزمان با رکاب زدن، از کمک موتور نیز استفاده کنید.</p>`,
-
-        meta:`<span class="sku_wrapper">
-                    Sku:
-                    <span class="sku">MQ000137417_33</span>
-                </span>
-                <span class="posted_in">
-                    Category:
-                    <a href="#">Furniture</a>
-                </span>
-                <span class="tagged_as">
-                    Tag:
-                    <a href="#">Home Decor, Lightting</a>
-                </span>`,
-        info:` <table class="shop_attributes">
-                    <tbody>
-                    <tr>
-                        <th>Weight</th>
-                        <td class="product_weight">5.8 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Dimensions</th>
-                        <td class="product_dimensions">H: 76 cm W: 56 cm D: 52 cm</td>
-                    </tr>
-                    </tbody>
-                </table>`
-    }, 
-    { pid: 'eb-05', bid:'emotor', price: 210000, old: 280000,pic:['s-p-8.png'],
-    title:'دوچرخه برقی مدل EB-05',
-        shortdesc:`<p>دوچرخه برقی  دارای موتور قدرتمند و باتری با قابلیت پیمودن مسافت‌های بلند با سرعت بالا می‌باشد. با یک شارژ، می‌توانید تا 120 کیلومتر با سرعت هیجان‌انگیزی به میزان 50 کیلومتر در ساعت طی کنید.</p>`,
-        desc:`<p>در این دوچرخه، سه حالت سواری متفاوت وجود دارد:
-        حالت تمام برقی: در این حالت، می‌توانید با استفاده از اهرم گاز، هنگامی که خسته شده یا در مسیرهای شیب‌دار قرار گرفته‌اید، به راحتی از توان موتور استفاده کنید.
-        حالت تمام ورزشی: در این حالت، شما می‌توانید با رکاب زدن به میزان دلخواه، ورزش کنید و فعالیت‌های ورزشی خود را انجام دهید.
-        حالت ترکیبی: این حالت به شما امکان می‌دهد همزمان با رکاب زدن، از کمک موتور نیز استفاده کنید.</p>`,
-
-        meta:`<span class="sku_wrapper">
-                    Sku:
-                    <span class="sku">MQ000137417_33</span>
-                </span>
-                <span class="posted_in">
-                    Category:
-                    <a href="#">Furniture</a>
-                </span>
-                <span class="tagged_as">
-                    Tag:
-                    <a href="#">Home Decor, Lightting</a>
-                </span>`,
-        info:` <table class="shop_attributes">
-                    <tbody>
-                    <tr>
-                        <th>Weight</th>
-                        <td class="product_weight">5.8 kg</td>
-                    </tr>
-                    <tr>
-                        <th>Dimensions</th>
-                        <td class="product_dimensions">H: 76 cm W: 56 cm D: 52 cm</td>
-                    </tr>
-                    </tbody>
-                </table>`
-    }
-]
+var sta_desc = `<p>نوشیدنی اسپرسو از عصاره گیری قهوه اسیا‌شده تحت فشار ۷ تا ۹ بار و دمای حدودی بین هشتاد و پنج تا نود و پنج درجه سانتیگراد تهیه می‌شود ؛ اصولا آماده سازی یک اسپرسو خوب نیاز به مهارت و تجربه بالا دارد و در کافه ها بصورت خالص و یا پایه نوشیدنیهای دیگر مانند کاپوچینو سرو می‌گردد ؛ متدهای دیگر دم آوری قهوه مانند ترک و فرانسه در درجه اسیا و درجه برشتگی و ابزار دم اوری متفاوت هستند ، برای مثال قهوه های دمی چکه‌ای مانند وی شصت آسیاب درشت‌تری به نسبت اسپرسو دارد و با کمک نیروی گرانش و عبور آب از فیلتر ،قهوه ما عصاره‌گیری می‌شود.</p>`;
+var sta_info_mid = ` <table class="shop_attributes">
+<tbody>
+<tr>
+    <th>مواد تشکیل‌دهنده:</th>
+    <td class="product_weight">دانه قهوه بو داده</td>
+</tr>
+<tr>
+    <th>میزان کافئین:</th>
+    <td class="product_weight">بالا</td>
+</tr>
+<tr>
+    <th>درجه برشته‌کاری:</th>
+    <td class="product_weight">مدیوم</td>
+</tr>
+<tr>
+    <th>دم‌افزار پیشنهادی:</th>
+    <td class="product_weight">اسپرسوساز خانگی, موکاپات, ابزارهای موج سوم, اسپرسوساز صنعتی</td>
+</tr>
+<tr>
+    <th>ساخت:</th>
+    <td class="product_weight">ایران</td>
+</tr>
+</tbody>
+</table>`;
+var data =
+    [
+        {
+            pid: 'b-1', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 50/50',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 50% عربیکا و 50% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-2', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 60/40 عربیکا',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 60% عربیکا و 40% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-3', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 70/30 عربیکا',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 70% عربیکا و 30% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-4', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 80/20 عربیکا',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 80% عربیکا و 20% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-5', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 50/50',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 50% عربیکا و 50% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-6', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 60/40 عربیکا',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 60% عربیکا و 40% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-7', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 70/30 عربیکا',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 70% عربیکا و 30% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-8', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 80/20 عربیکا',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 80% عربیکا و 20% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-9', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 50/50',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 50% عربیکا و 50% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-10', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 60/40 عربیکا',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 60% عربیکا و 40% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-11', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 70/30 عربیکا',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 70% عربیکا و 30% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-12', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 80/20 عربیکا',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 80% عربیکا و 20% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-102', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 60/40 ربوستا',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 40% عربیکا و 60% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-103', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 70/30 ربوستا',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 30% عربیکا و 70% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-104', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 80/20 ربوستا',
+            weight: '250 گرم',
+            shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-106', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 60/40 ربوستا',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 40% عربیکا و 60% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-107', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 70/30 ربوستا',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 30% عربیکا و 70% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-108', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 80/20 ربوستا',
+            weight: '500 گرم',
+            shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-110', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 60/40 ربوستا',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 40% عربیکا و 60% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-111', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 70/30 ربوستا',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 30% عربیکا و 70% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'b-112', bid: 'bean', price: 175000, pic: ['1.png'],
+            title: 'دانه قهوه ترکیبی اسپرسو 80/20 ربوستا',
+            weight: '1 کیلوگرم',
+            shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        }
+    ]
