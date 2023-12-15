@@ -192,5 +192,33 @@ var data =
             shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
             desc: sta_desc,
             info: sta_info_mid
+        },
+        {
+            pid: 'g-1', bid: 'machine', price: 175000, pic: ['g1-2.jpg','g1-3.jpg'],
+            title: 'گرینر دستی قهوه',
+            shortdesc: `<p>گرینر دستی</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'g-2', bid: 'machine', price: 175000, pic: ['g2.png','g2-2.jpg','g2-3.png'],
+            title: 'گرینر دستی قهوه',
+            shortdesc: `<p>گرینر دستی</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'g-3', bid: 'machine', price: 175000, pic: ['gezve.png'],
+            title: 'قهوه ساز جزوه',
+            shortdesc: `<p>قهوه ساز جزوه</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
+        },
+        {
+            pid: 'n-1', bid: 'nobean', price: 175000, pic: ['n.png'],
+            title: 'نسکافه 3 در یک',
+            shortdesc: `<p>قهوه ساز جزوه</p>`,
+            desc: sta_desc,
+            info: sta_info_mid
         }
     ]

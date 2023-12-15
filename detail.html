@@ -222,6 +222,7 @@
                                                 <span class="woocommerce-Price-currencySymbol"> تومان</span>
                                              </span>
                                           </del>` : '';
+      var badgestr = item.badge != null ? item.badge.replace(' g',' گرم').replace(' kg',' کیلوگرم') : "" ;
       var summerystring = `<h1 class="product_title entry-title">${item.title}</h1>
                            <p class="price">
                               ${delstring}
@@ -234,7 +235,7 @@
                            </p>
                            <div class="woocommerce-product-details__short-description  text-right">
                               ${item.shortdesc}
-                              <p>${item.badge.replace(' g',' گرم').replace(' kg',' کیلوگرم')}</p>
+                              <p>${badgestr}</p>
                            </div>`;
       $('#entry-summary').html(summerystring);
       $('#product-meta').html(item.meta);
