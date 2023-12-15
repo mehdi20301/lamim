@@ -1535,3 +1535,27 @@ label{float: right;}
     text-align: right;
     padding-right: 10px;
 }
+.badgepink {
+    background:#eba6aa;
+    color: white;
+    padding: 0 7.5px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.badgeblue {
+    background:#88cce2;
+    color: white;
+    padding: 0 7.5px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.badgeyellow {
+    background:#e2e088;
+    color: white;
+    padding: 0 7.5px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}

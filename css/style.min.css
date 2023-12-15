@@ -4657,6 +4657,7 @@ textarea:-moz-placeholder {
 
 .shop-single-v1-section .woocommerce .summary .price .woocommerce-Price-currencySymbol {
     margin-right: -7px;
+    font-size: 10px;
 }
 
 .shop-single-v1-section .woocommerce .summary .cart {
@@ -4766,11 +4767,12 @@ textarea:-moz-placeholder {
     font-size: 17px;
     font-weight: 500;
     color: #999;
-    padding: 7px 30px 7px 0;
+    padding: 7px 10px 7px 30px;
 }
 
 .shop-single-v1-section .woocommerce .woocommerce-tabs .wc-tabs .nav-item .nav-link.active {
     color: #333;
+    background-color: #858484;
 }
 
 .shop-single-v1-section .woocommerce .woocommerce-tabs .tab-content .woocommerce-Tabs-panel {

@@ -196,7 +196,7 @@
          var fav = favItems.find(x => x == item.pid);
          var delstring = item.old != null ? `<del> <span class="woocommerce-Price-amount amount"> ${item.old} T </span> </del>` : "";
          var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount">  ${item.price} T </span> </ins> </span>`;
-
+         var badge = item.badgecss != null ? ` <a href="#" class="${item.badgecss}">${item.badge}</a>` : "";
          var imgsecond = item.pic.length > 1 ? `<img class="image-secondary" src="images/${item.pic[1]}" alt="product">` : '';
          var linkimg = `<div class="col">
                            <div class="product type-product">
@@ -207,6 +207,7 @@
                                        <img src="images/${item.pic[0]}" alt="product">${imgsecond}
                                        </a>
                                     </div>
+                                    ${badge}
                                     <div class="yith-wcwl-add-button show">
                                        <a data="${item.pid}" class="add_to_wishlist">
                                        <i class="zmdi zmdi-favorite${fav != null ? ' red' : '-outline'}"></i>

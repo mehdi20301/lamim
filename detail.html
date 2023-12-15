@@ -218,8 +218,8 @@
       $('#tab-description').html(item.desc);
       $('#tab-additional_information').html(item.info);
       var delstring = item.old != null ? `<del><span class="woocommerce-Price-amount amount">
-                                                <span class="woocommerce-Price-currencySymbol">T</span>
-                                                ${item.old}
+                                                ${item.old.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                                                <span class="woocommerce-Price-currencySymbol"> تومان</span>
                                              </span>
                                           </del>` : '';
       var summerystring = `<h1 class="product_title entry-title">${item.title}</h1>
@@ -227,13 +227,14 @@
                               ${delstring}
                               <ins>
                                  <span class="woocommerce-Price-amount amount">
-                                    <span class="woocommerce-Price-currencySymbol">T</span>
-                                    ${item.price}
+                                    ${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                                    <span class="woocommerce-Price-currencySymbol"> تومان</span>
                                  </span>
                               </ins>
                            </p>
                            <div class="woocommerce-product-details__short-description  text-right">
                               ${item.shortdesc}
+                              <p>${item.badge.replace(' g',' گرم').replace(' kg',' کیلوگرم')}</p>
                            </div>`;
       $('#entry-summary').html(summerystring);
       $('#product-meta').html(item.meta);
