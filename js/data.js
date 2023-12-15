@@ -26,7 +26,7 @@ var sta_info_mid = ` <table class="shop_attributes">
 var data =
     [
         {
-            pid: 'b-1', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-1', bid: 'bean', price: 175000, pic: ['3.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 50/50',
             badgecss:'badgeyellow' ,badge: '250 g',
             shortdesc: `<p>ترکیب 50% عربیکا و 50% ربوستا</p>`,
@@ -58,7 +58,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-5', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-5', bid: 'bean', price: 175000, pic: ['3.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 50/50',
             badgecss:'badgeblue' ,badge: '500 g',
             shortdesc: `<p>ترکیب 50% عربیکا و 50% ربوستا</p>`,
@@ -90,7 +90,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-9', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-9', bid: 'bean', price: 175000, pic: ['3.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 50/50',
             badgecss:'badgepink' ,badge: '1 kg',
             shortdesc: `<p>ترکیب 50% عربیکا و 50% ربوستا</p>`,
@@ -122,7 +122,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-102', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-102', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 60/40 ربوستا',
             badgecss:'badgeyellow' ,badge: '250 g',
             shortdesc: `<p>ترکیب 40% عربیکا و 60% ربوستا</p>`,
@@ -130,7 +130,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-103', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-103', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 70/30 ربوستا',
             badgecss:'badgeyellow' ,badge: '250 g',
             shortdesc: `<p>ترکیب 30% عربیکا و 70% ربوستا</p>`,
@@ -138,7 +138,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-104', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-104', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 80/20 ربوستا',
             badgecss:'badgeyellow' ,badge: '250 g',
             shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
@@ -146,7 +146,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-106', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-106', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 60/40 ربوستا',
             badgecss:'badgeblue' ,badge: '500 g',
             shortdesc: `<p>ترکیب 40% عربیکا و 60% ربوستا</p>`,
@@ -154,7 +154,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-107', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-107', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 70/30 ربوستا',
             badgecss:'badgeblue' ,badge: '500 g',
             shortdesc: `<p>ترکیب 30% عربیکا و 70% ربوستا</p>`,
@@ -162,7 +162,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-108', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-108', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 80/20 ربوستا',
             badgecss:'badgeblue' ,badge: '500 g',
             shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
@@ -170,7 +170,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-110', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-110', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 60/40 ربوستا',
             badgecss:'badgepink' ,badge: '1 kg',
             shortdesc: `<p>ترکیب 40% عربیکا و 60% ربوستا</p>`,
@@ -178,7 +178,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-111', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-111', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 70/30 ربوستا',
             badgecss:'badgepink' ,badge: '1 kg',
             shortdesc: `<p>ترکیب 30% عربیکا و 70% ربوستا</p>`,
@@ -186,7 +186,7 @@ var data =
             info: sta_info_mid
         },
         {
-            pid: 'b-112', bid: 'bean', price: 175000, pic: ['1.png'],
+            pid: 'b-112', bid: 'bean', price: 175000, pic: ['2.png'],
             title: 'دانه قهوه ترکیبی اسپرسو 80/20 ربوستا',
             badgecss:'badgepink' ,badge: '1 kg',
             shortdesc: `<p>ترکیب 20% عربیکا و 80% ربوستا</p>`,
