@@ -1559,3 +1559,44 @@ label{float: right;}
     top: 20px;
     right: 0;
 }
+
+.coupon .input-text{
+    border: none;
+    border-bottom: 1px solid #333;
+    float: left;
+    width: 213px;
+    text-align: left;
+    direction: ltr;
+    padding-left: 5px;
+}
+
+.coupon div{
+    width: 196px;
+}
+
+.container {
+    padding: 2rem 0rem;
+  }
+  
+  .modal-dialog {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 0.5rem;
+    bottom: 0;
+    margin-bottom: 0.5rem;
+    min-width: 300px;
+    max-width: 400px;
+  }
+  .modal-dialog .notice {
+    padding: 0rem 1rem;
+  }
+  .modal-dialog .notice h4 {
+    margin-bottom: 1.5rem;
+  }
+  .modal-dialog .notice p {
+    margin-bottom: 0.5rem;
+  }
+  .modal-dialog .icon {
+    font-size: 3rem;
+  }

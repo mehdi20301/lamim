@@ -24,18 +24,18 @@
 <body class="homepages-1" onload='onloadbody()'>
    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-               <span aria-hidden="true">&times;</span>
-             </button>
-             <p class="text-right green">
-                سفارش شما با موفقیت ثبت شد و در اولین فرصت تیم فروش با شما تماس خواهد گرفت.
-             </p>
-          </div>
-        </div>
+         <div class="modal-content">
+            <div class="modal-body">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+               <p class="text-right green">
+                  سفارش شما با موفقیت ثبت شد و در اولین فرصت تیم فروش با شما تماس خواهد گرفت.
+               </p>
+            </div>
+         </div>
       </div>
-    </div>
+   </div>
    <header class="header">
       <div class="header-hp-1 style-header-hp-1">
          <div id="js-navbar-fixed" class="menu-desktop">
@@ -91,11 +91,13 @@
                               </div>
                               <div class="contact">
                                  <p id="notifyheader" style="display: none; color: lightgreen;"></p>
-                                 <p>لطفا برای برقراری تماس یا در تلگرام پیام خود را ارسال کنید و یا شماره موبایل خود را در کادر پایین وارد نمایید تا در اولین فرصت با شما تماس گرفته شود.</p>
+                                 <p>لطفا برای برقراری تماس یا در تلگرام پیام خود را ارسال کنید و یا شماره موبایل خود را
+                                    در کادر پایین وارد نمایید تا در اولین فرصت با شما تماس گرفته شود.</p>
                                  <div class="contact-inner">
                                     <img width="20" src="images/icons/telegram-logo.png">
                                     <div class="contact-info">
-                                       <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in Telegram</a></span>
+                                       <span><a href="https://mehDesmaeeli.t.me" target="_blank">Chat in
+                                             Telegram</a></span>
                                     </div>
                                  </div>
                               </div>
@@ -103,8 +105,7 @@
                                  <div id="sendheader" class="send">
                                     <i class="zmdi zmdi-mail-send"></i>
                                  </div>
-                                 <input type="email"  id="emailheader"
-                                    placeholder="Mobile Number,...">
+                                 <input type="email" id="emailheader" placeholder="Mobile Number,...">
                               </div>
                            </div>
                         </div>
@@ -124,7 +125,7 @@
                   <div class="row">
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 rtl">
                         <div class="cart-collaterals">
-                           <form class="checkout woocommerce-checkout" >
+                           <form class="checkout woocommerce-checkout">
                               <div class="woocommerce-billing-fields">
                                  <h2>اطلاعات صورتحساب</h2>
                                  <p id="notifybilling" class="text-right red"></p>
@@ -150,7 +151,8 @@
                               </div>
                            </form>
                            <div class="wc-proceed-to-checkout">
-                              <a onclick="registOrder()" class="checkout-button button wc-forward au-btn btn-small ">ثبت سفارش <i class="zmdi zmdi-arrow-left"></i></a>
+                              <a onclick="registOrder()" class="checkout-button button wc-forward au-btn btn-small ">ثبت
+                                 سفارش <i class="zmdi zmdi-arrow-left"></i></a>
                            </div>
                         </div>
                      </div>
@@ -161,6 +163,50 @@
                               <tbody id="basket-body">
                               </tbody>
                            </table>
+                           <div class="cart-collaterals">
+                              <div class="cart_totals">
+                                 <h2></h2>
+                                 <table class="shop_table shop_table_responsive">
+                                    <tbody>
+                                       <tr class="cart-subtotal">
+                                          <th>مجموع لیست خرید</th>
+                                          <td data-title="Subtotal">
+                                             <span id="sumOrder" class="woocommerce-Price-amount amount">
+                                                
+                                             </span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <th>کد تخفیف</th>
+                                          <td>
+                                          <div class="coupon">
+                                             <input type="text" name="coupon_code" class="input-text" id="coupon_code"
+                                                value="" placeholder="Coupon code">
+                                             <div>
+                                                <input type="submit" class="button au-btn" onclick="applyCoupon()"
+                                                   value="ثبت">
+                                             </div>
+                                             <di><p id="coupon_alert"></p></di>
+                                          </div>
+                                       </td>
+                                       </tr>
+                                       <tr class="shipping">
+                                          <th>هزینه ارسال</th>
+                                          <td>
+                                             رایگان
+                                          </td>
+                                       </tr>
+                                       <tr class="order-total">
+                                          <th>مبلغ قابل پرداخت</th>
+                                          <td data-title="Total">
+                                             <span id="paymentOrder" class="woocommerce-Price-amount amount">
+                                             </span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -177,13 +223,34 @@
    <script src="js/bootstrap.min.js"></script>
    <script src="js/jquery.fancybox.min.js"></script>
    <script src="js/data.js"></script>
+   <script src="js/coupondata.js"></script>
    <script src="js/custom.js"></script>
 </body>
 <script>
    var trbodystring = '';
+   var coupon=0;
+   var basket = [];
+   function factorDetail(){
+      stringPrice = '<span class="woocommerce-Price-currencySymbol"> تومان </span>';
+      var sumOrder = basket.map(item=> item.qty * data.find(x => x.pid == item.pid).price ).reduce((a,b) => +a + +b,0);
+      $('#sumOrder').html(stringPrice + sumOrder);
+      $('#paymentOrder').html(stringPrice + (sumOrder - (sumOrder*coupon)));
+   }
+   function applyCoupon(){
+      var coupon_code = hashing($('#coupon_code').val());
+      var item = coupondata.find(x=> x.key == coupon_code);
+      coupon = item != null ? item.value : 0 ;
+      if(coupon > 0) {
+         $('#coupon_alert').html(' کد تخفیف اعمال شد')
+      }else {
+         $('#coupon_alert').html(' کد تخفیف معتبر نیست')
+      }
+
+      factorDetail();
+   }
    function onloadbody() {
       doload();
-      var basket = JSON.parse(localStorage.getItem('basket')) || [];
+      basket = JSON.parse(localStorage.getItem('basket')) || [];
       basketCountNotify(basket);
       basket.forEach(element => {
          var item = data.find(x => x.pid == element.pid);
@@ -208,6 +275,7 @@
          trbodystring += trstring
       });
       $('#basket-body').html(trbodystring);
+      factorDetail();
    }
 </script>
 <footer class="footer-section position-relative section-box">
@@ -224,17 +292,16 @@
                   </div>
                </div>
                <div class="col-md-6 col-sm-10 col-10">
-                     <div class="footer-items">
-                        <div class="email">
-                           <div class="send" id="sendfooter">
-                              <i class="zmdi zmdi-mail-send"></i>
-                           </div>
-                           <input type="email"  id="emailfooter"
-                              placeholder="  لطفا شماره تماس خود را ثبت کنید">
+                  <div class="footer-items">
+                     <div class="email">
+                        <div class="send" id="sendfooter">
+                           <i class="zmdi zmdi-mail-send"></i>
                         </div>
-                        <p id="notifyfooter" style="display: none; color:yellow"></p>
-                        <p>پ.ن: حرف T در قیمتها معادل  تومان است</p>
+                        <input type="email" id="emailfooter" placeholder="  لطفا شماره تماس خود را ثبت کنید">
                      </div>
+                     <p id="notifyfooter" style="display: none; color:yellow"></p>
+                     <p>پ.ن: حرف T در قیمتها معادل تومان است</p>
+                  </div>
                </div>
             </div>
          </div>
