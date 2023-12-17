@@ -21,27 +21,14 @@
 </head>
 
 <body class="homepages-1" onload='onloadbody()'>
-
    <div class="modal fade" id="discountModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <div class="icon text-danger">
-              <i class="fas fa-gift"></i>
-            </div>
-            <div class="notice">
-              <h4>Get 50% Discount</h4>
-              <p>For the next 24 hours you can get any product at half-price.</p>
-              
-              <p>Use promo code <span class="badge badge-info">50-OFF</span> at checkout.</p>
-            </div>
-            <div class="code"></div>
-          </div>
-          <div class="modal-footer d-flex justify-content-between">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Nevermind</button>
-            <button type="button" class="btn btn-danger">Get Code</button>
-          </div>
-        </div>
+      <div class="modal-dialog d-flex justify-content-center" role="document">
+         <div style="background: url(images/images.png) no-repeat center top/cover; height: 225px; width: 225px; position: relative;">
+         <div class="code-yalda">
+            <span>1634390jf</span>
+            <a href="#"><i class="zmdi zmdi-copy"></i></a>
+         </div>
+         </div>
       </div>
     </div>
 
@@ -248,7 +235,7 @@
    }
 
    function onloadbody() {
-      $('#discountModal').modal('show');
+     // $('#discountModal').modal('show');
       //doload();
       pageback = getUrlParameter('back');
       if (pageback == false) dolog(" index page");
@@ -311,47 +298,49 @@
    }
 </script>
 
-<div class="row  mb-5 mt-5">
-   <hr>
-   <div class="col-lg-4 col-md-6 mt-30">
-       <div class="contact-info d-flex align-items-center justify-content-center">
-           <div class="icon d-flex align-items-center justify-content-center">
-               <img src="images/icons/ci-3.png" alt="">
-           </div>
-           <div class="content">
-               <h4 class="title">ارسال فوری</h4>
-               <p><a >در صورت خرید تا ساعت</a></p>
-               <p><a >12 ظهر ارسال همان روز</a></p>
-           </div>
-       </div>
-   </div>
-   <div class="col-lg-4 col-md-6 mt-30">
-       <div class="contact-info d-flex align-items-center justify-content-center">
-           <div class="icon d-flex align-items-center justify-content-center">
-               <img src="images/icons/ci-2.png" alt="">
-           </div>
-           <div class="content">
-               <h4 class="title">تحویل درب منزل</h4>
-               <p>امکان پرداخت وجه درب منزل</p>
-           </div>
-       </div>
-   </div>
-   <div class="col-lg-4 col-md-6 mt-30">
-       <div class="contact-info d-flex align-items-center justify-content-center">
-           <div class="icon d-flex align-items-center justify-content-center">
-               <img src="images/icons/ci-1.png" alt="">
-           </div>
-           <div class="content">
-               <h4 class="title">ضمانت کیفیت کالا</h4>
-               <p>تضمین کیفیت</p>
-           </div>
-       </div>
+<div class="container">
+   <div class="row mt-5">
+      <hr>
+      <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="contact-info d-flex align-items-center justify-content-center">
+              <div class="content text-right">
+                  <h4 class="title">ارسال فوری</h4>
+                  <p>در صورت خرید تا سا 12 عت</p>
+                  <p>12 ظهر ارسال همان روز</p>
+              </div>
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/icons/ci-3.png" alt="">
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="contact-info d-flex align-items-center justify-content-center">
+             <div class="content text-right">
+                 <h4 class="title">تحویل درب منزل</h4>
+                 <p>امکان پرداخت وجه درب منزل</p>
+             </div>
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/icons/ci-2.png" alt="">
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="contact-info d-flex align-items-center justify-content-center">
+             <div class="content text-right">
+                 <h4 class="title">ضمانت کیفیت کالا</h4>
+                 <p>تضمین کیفیت</p>
+             </div>
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/icons/ci-1.png" alt="">
+              </div>
+          </div>
+      </div>
    </div>
 </div>
 <footer class="footer-section position-relative section-box">
    <div class="wrapper  overlay-top">
       <div class="footer-content">
-         <div class="container mt-5">
+         <div class="container">
             <div class="row">
                <div class="col-md-12 col-sm-12 col-12">
                   <div class="footer-items">

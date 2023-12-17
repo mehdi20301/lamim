@@ -1483,14 +1483,16 @@ label{float: right;}
     margin-bottom: 5rem;
 }
 
-
+.contact-info{
+    margin-bottom: 30px;
+}
 
 .contact-info .icon {
     flex: 0 0 80px;
     -ms-flex: 0 0 80px;
     max-width: 80px;
     height: 70px;
-    margin-right: 30px;
+    margin-left: 30px;
     border: 1px solid #E2DFDD;
     border-radius: 10px;
 }
@@ -1573,10 +1575,6 @@ label{float: right;}
 .coupon div{
     width: 196px;
 }
-
-.container {
-    padding: 2rem 0rem;
-  }
   
   .modal-dialog {
     position: fixed;
@@ -1600,3 +1598,34 @@ label{float: right;}
   .modal-dialog .icon {
     font-size: 3rem;
   }
+  .code-yalda span{
+    right: 0px;
+    bottom: -45px;
+    position: absolute;
+    left: 0px;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    border:3px dashed yellowgreen
+  }
+  .code-yalda a{
+    background-color: #eee;
+    display: block;
+    padding: 2px 12px;
+    font-size: 25px;
+    bottom: -42px;
+    position: absolute;
+    right: 3px;
+  }
+  .c-coupon{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+  }
+.footer-section.section-box{
+    padding: 70px 15px !important;
+}
