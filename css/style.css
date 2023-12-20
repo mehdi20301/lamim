@@ -1629,3 +1629,13 @@ label{float: right;}
 .footer-section.section-box{
     padding: 70px 15px !important;
 }
+.pin{
+    margin-right: 10px;
+}
+.content .title{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.content p{
+    font-size: 12px;
+}

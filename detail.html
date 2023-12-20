@@ -178,10 +178,29 @@
                </div>
             </div>
          </div>
-         <div class="view-all">
-            <a href="index.html?back=1" class="au-btn btn-small"><i class="zmdi zmdi-arrow-left"></i> تمامی محصولات</a>
+      </section>
+
+      <section id="others" class="featured-hp-1 clearfix">
+         <div class="container">
+            <div class="featured-content woocommerce">
+               <h2 class="special-heading">محصولات مشابه</h2>
+               <div class="content-area">
+                  <div id="row-products" class="row">
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
+
+      <section class="featured-hp-1">
+
+         <div class="view-all">
+            <a href="index.html?back=1" class="au-btn btn-small"><i class="zmdi zmdi-arrow-left"></i> تمامی محصولات</a>
+            
+            <a href="basket.html" class="single_add_to_cart_button button alt au-btn btn-small">سبد خرید<i class="zmdi zmdi-arrow-right"></i></a>
+         </div>
+      </section>
+     
    </div>
 
 
@@ -201,6 +220,41 @@
       pagepid = getUrlParameter('pid');
       var basket = JSON.parse(localStorage.getItem('basket')) || [];
       basketCountNotify(basket);
+      favItems = JSON.parse(localStorage.getItem('favItems')) || [];
+      var pageproduct = pagepid.split('-')[0]+ '-';
+      var products = '';
+      data.filter(x=> x.pid.includes(pageproduct)).forEach(item => {
+         var fav = favItems.find(x => x == item.pid);
+         var delstring = item.old != null ? `<del> <span class="woocommerce-Price-amount amount"> ${item.old.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} T </span> </del>` : "";
+         var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount">  ${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") } T </span> </ins> </span>`;
+         var badge = item.badgecss != null ? ` <a href="#" class="${item.badgecss}">${item.badge}</a>` : "";
+         var imgsecond = item.pic.length > 1 ? `<img class="image-secondary" src="images/${item.pic[1]}" alt="product">` : '';
+         var linkimg = `<div class="col">
+                           <div class="product type-product">
+                              <div class="woocommerce-LoopProduct-link">
+                                 <div class="product-image">
+                                    <div class="clearfix">
+                                       <a href="detail.html?pid=${item.pid}" class="wp-post-image">
+                                       <img src="images/${item.pic[0]}" alt="product">${imgsecond}
+                                       </a>
+                                    </div>
+                                    ${badge}
+                                    <div class="yith-wcwl-add-button show">
+                                       <a data="${item.pid}" class="add_to_wishlist">
+                                       <i class="zmdi zmdi-favorite${fav != null ? ' red' : '-outline'}"></i>
+                                       </a>
+                                    </div>
+                                    <h5 class="woocommerce-loop-product__title mb-2"><a href="detail.html?pid=${item.pid}">${item.title}</a></h5>
+                                    <div class="price mb-2">${spanstring}</div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>`;
+         products += linkimg;
+      });
+      $('#row-products').html(products);
+
       $('#add-to-cart').click(function () {
          var basket = JSON.parse(localStorage.getItem('basket')) || [];
          var item = { pid: pagepid, qty: $('#quantity').val() }
@@ -264,10 +318,51 @@
       });
    }
 </script>
+<div class="container">
+   <div class="row mt-5">
+      <hr>
+      <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="contact-info d-flex align-items-center justify-content-center">
+              <div class="content text-right">
+                  <h4 class="title">ارسال فوری</h4>
+                  <p>در صورت خرید تا 2 بعدازظهر</p>
+                  <p>ارسال همان روز</p>
+              </div>
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/icons/ci-3.png" alt="">
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="contact-info d-flex align-items-center justify-content-center">
+             <div class="content text-right">
+                 <h4 class="title">تحویل درب منزل</h4>
+                 <p>دلیوری رایگان برای خرید 1 میلیون</p>
+                 <p>امکان پرداخت وجه درب منزل</p>
+             </div>
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/icons/ci-2.png" alt="">
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-30">
+          <div class="contact-info d-flex align-items-center justify-content-center">
+             <div class="content text-right">
+                 <h4 class="title">ضمانت کیفیت کالا</h4>
+                 <p>تضمین کیفیت کالا</p>
+                 <p>امکان مرجوعی کالا به هر دلیل</p>
+             </div>
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <img src="images/icons/ci-1.png" alt="">
+              </div>
+          </div>
+      </div>
+   </div>
+</div>
 <footer class="footer-section position-relative section-box">
-   <div class="wrapper overlay-top">
+   <div class="wrapper  overlay-top">
       <div class="footer-content">
-         <div class="container mt-5">
+         <div class="container">
             <div class="row">
                <div class="col-md-12 col-sm-12 col-12">
                   <div class="footer-items">
@@ -295,5 +390,4 @@
       </div>
    </div>
 </footer>
-
 </html>

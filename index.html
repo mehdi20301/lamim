@@ -25,7 +25,7 @@
       <div class="modal-dialog d-flex justify-content-center" role="document">
          <div style="background: url(images/images.png) no-repeat center top/cover; height: 225px; width: 225px; position: relative;">
          <div class="code-yalda">
-            <span>1634390jf</span>
+            <span>Yalda</span>
             <a href="#"><i class="zmdi zmdi-copy"></i></a>
          </div>
          </div>
@@ -86,6 +86,26 @@
                                        alt="logo"></a>
                               </div>
                               <div class="contact">
+                                 <div class="row" >
+                                    <div class="pin">
+                                       <i class="zmdi zmdi-pin"></i>
+                                       Tehran
+                                    </div>
+                                    <div  class="pin">
+                                       <i class="zmdi zmdi-pin"></i>
+                                       Mashhad
+                                    </div>
+                                    <div class="pin">
+                                       <i class="zmdi zmdi-pin"></i>
+                                       Shiraz
+                                    </div>
+                                    <div class="pin">
+                                       <i class="zmdi zmdi-pin"></i>
+                                       Esfehan
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="contact">
                                  <p id="notifyheader" style="display: none; color: lightgreen;"></p>
                                  <p>لطفا برای برقراری تماس یا در تلگرام پیام خود را ارسال کنید و یا شماره موبایل خود را در کادر پایین وارد نمایید تا در اولین فرصت با شما تماس گرفته شود.</p>
                                  <div class="contact-inner">
@@ -95,6 +115,7 @@
                                     </div>
                                  </div>
                               </div>
+                              
                               <div class="email">
                                  <div id="sendheader" class="send">
                                     <i class="zmdi zmdi-mail-send"></i>
@@ -249,7 +270,7 @@
 
       favItems = JSON.parse(localStorage.getItem('favItems')) || [];
       var products = '';
-      data.forEach(item => {
+      data.filter(x=> x.onsite == true).forEach(item => {
          var fav = favItems.find(x => x == item.pid);
          var delstring = item.old != null ? `<del> <span class="woocommerce-Price-amount amount"> ${item.old.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} T </span> </del>` : "";
          var spanstring = `<span > ${delstring} <ins> <span class="woocommerce-Price-amount amount">  ${item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") } T </span> </ins> </span>`;
@@ -305,8 +326,8 @@
           <div class="contact-info d-flex align-items-center justify-content-center">
               <div class="content text-right">
                   <h4 class="title">ارسال فوری</h4>
-                  <p>در صورت خرید تا سا 12 عت</p>
-                  <p>12 ظهر ارسال همان روز</p>
+                  <p>در صورت خرید تا 2 بعدازظهر</p>
+                  <p>ارسال همان روز</p>
               </div>
               <div class="icon d-flex align-items-center justify-content-center">
                   <img src="images/icons/ci-3.png" alt="">
@@ -317,6 +338,7 @@
           <div class="contact-info d-flex align-items-center justify-content-center">
              <div class="content text-right">
                  <h4 class="title">تحویل درب منزل</h4>
+                 <p>دلیوری رایگان برای خرید 1 میلیون</p>
                  <p>امکان پرداخت وجه درب منزل</p>
              </div>
               <div class="icon d-flex align-items-center justify-content-center">
@@ -328,7 +350,8 @@
           <div class="contact-info d-flex align-items-center justify-content-center">
              <div class="content text-right">
                  <h4 class="title">ضمانت کیفیت کالا</h4>
-                 <p>تضمین کیفیت</p>
+                 <p>تضمین کیفیت کالا</p>
+                 <p>امکان مرجوعی کالا به هر دلیل</p>
              </div>
               <div class="icon d-flex align-items-center justify-content-center">
                   <img src="images/icons/ci-1.png" alt="">
